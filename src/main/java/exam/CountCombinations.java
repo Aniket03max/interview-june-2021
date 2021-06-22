@@ -64,13 +64,19 @@ static ArrayList<ArrayList<Integer> >
 			return;
 		}
 
+		System.out.println("OutPut : ");
+
 		for (int i = 0; i < ans.size(); i++) {
 
-			System.out.print("(");
 			for (int j = 0; j < ans.get(i).size(); j++) {
+			    if(j<(ans.get(i).size()-1)){
+			        System.out.print(ans.get(i).get(j) + ",");
+			    }
+			    else {
 				System.out.print(ans.get(i).get(j) + " ");
+			    }
 			}
-			System.out.print(") ");
-      System.out.print("\n");
+			System.out.print("\n");
+		}
 		}
 	}
