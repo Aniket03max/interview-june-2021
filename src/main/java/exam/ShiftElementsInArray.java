@@ -10,6 +10,7 @@ public class ShiftElementsInArray {
             }
             arr[0] = last;
 
-  }
+  } 
+  return arr[i];
 
 }
